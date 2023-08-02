@@ -9,7 +9,7 @@ import time
 
 
 def gpt_engine(doma):
-    openai.api_key='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'
+    openai.api_key='#'
     try:
         response = openai.ChatCompletion.create(model="gpt-3.5-turbo-16k", messages=[{"role": "system", "content": "fai un riassunto adatto all'utente medio di questo testo e restituiscilo formattato" + doma}], temperature=0, max_tokens=2041)
         message = response["choices"][0]["message"]
